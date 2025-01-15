@@ -110,6 +110,7 @@ public:
   void setMode(lsm303_accel_mode_t);
 
   void interruptsActiveHigh(bool);
+  Adafruit_I2CDevice *getI2CDevice();
 
 private:
   int32_t _sensorID;
